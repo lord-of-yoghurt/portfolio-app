@@ -5,4 +5,6 @@ class Blog < ApplicationRecord
   # to turn title into slug for show route
   extend FriendlyId
   friendly_id :title, use: :slugged
+
+  validates_presence_of :title, :body
 end
