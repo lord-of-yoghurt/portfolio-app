@@ -2,6 +2,12 @@ class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout "blog"
 
+  ########### PETERGATE CONFIG FOR BLOGS ###########
+  # 'all' is everyone (guest/user/admin)
+  # user canNOT create/edit/delete blogs
+  # site_admin is almighty and omnipotent :D
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :edit]}, site_admin: :all
+
   # GET /blogs
   # GET /blogs.json
   def index
