@@ -2,7 +2,7 @@
 
 <h3><%= @portfolio_item.subtitle %></h3>
 
-<p><%= image_tag @portfolio_item.main_image if @portfolio_item.main_image %></p>
+<p><%= image_tag @portfolio_item.main_image %></p>
 
 <p><%= @portfolio_item.body %></p>
 
@@ -14,10 +14,8 @@
   <% end %>
 </ul>
 
-
-
 <p>
-  <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item) %> |
-  <%= link_to "Delete Item", portfolio_path(@portfolio_item), method: :delete, data: { confirm: "Are you sure?" } %> |
-  <%= link_to "Back to Index", portfolios_path %>
+<%= link_to "Edit Item", edit_portfolio_path(@portfolio_item) if logged_in?(:site_admin) %>
+<%= link_to "Delete Item", portfolio_path(@portfolio_item), method: :delete, data: { confirm: "Are you sure?" } if logged_in?(:site_admin) %>
+<%= link_to "Back to Index", portfolios_path %>
 </p>
