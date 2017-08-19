@@ -58,3 +58,5 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'awesome_view_tool', git: 'https://github.com/lord-of-yoghurt/awesome_view_tool'
 
 gem 'petergate', '~> 1.7', '>= 1.7.5'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
