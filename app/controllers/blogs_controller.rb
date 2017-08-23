@@ -6,12 +6,12 @@ class BlogsController < ApplicationController
   # 'all' is everyone (guest/user/admin)
   # user canNOT create/edit/delete blogs
   # site_admin is almighty and omnipotent :D
-  access all: [:show, :index], user: {except: [:destroy, :new, :create, :edit]}, site_admin: :all
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :edit, :toggle_status]}, site_admin: :all
 
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
+    @blogs = Blog.page(params[:page]).per(5)
     @page_title = "Blogs"
   end
 

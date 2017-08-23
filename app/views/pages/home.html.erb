@@ -1,8 +1,7 @@
-<h1>Hi, <%= current_user.first_name %></h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h2>Blog Posts</h2>
-<%= @posts.inspect %>
-
-<h2>Skills</h2>
-<%= @skills.inspect %>
+<div class="inner cover">
+  <h1 class="cover-heading">Oh hai.</h1>
+  <p class="lead">Thank you for visiting this page dedicated to my software development practices. It is still under construction, but I will be updating the content as it comes along.</p>
+  <p class="lead">
+    <%= link_to "About Me", about_path, class: "btn btn-lg btn-secondary" %>
+  </p>
+</div>
