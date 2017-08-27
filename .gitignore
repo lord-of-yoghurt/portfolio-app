@@ -20,3 +20,7 @@
 
 # Ignore files with secrets
 /config/secrets.yml
+
+**/.DS_Store
+
+.env

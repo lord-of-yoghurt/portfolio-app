@@ -49,15 +49,32 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# to slugify stuff
 gem 'friendly_id', '~> 5.1.0'
+
+# for user accounts
 gem 'devise', '~> 4.2'
+
+# all the front-end stuff
 gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
-# my own little gem :)
+# my own little gem to display copyright in footer :)
 gem 'awesome_view_tool', git: 'https://github.com/lord-of-yoghurt/awesome_view_tool'
 
+# for access rights to different routes
 gem 'petergate', '~> 1.7', '>= 1.7.5'
+
+# for cool icons
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+
+# for pagination
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
+
+# for video uploader
+gem 'carrierwave', '~> 1.1'
+gem 'carrierwave-aws', '~> 1.0'
+gem 'mini_magick', '~> 4.8'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
