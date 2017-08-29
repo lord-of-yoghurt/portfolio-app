@@ -84,3 +84,6 @@ gem 'cocoon', '~> 1.2', '>= 1.2.10'
 
 # for user notifications
 gem 'gritter', '~> 1.2'
+
+# to use the twitter API for social tool module in lib
+gem 'twitter', '~> 6.1'
