@@ -81,3 +81,6 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 
 # for nested forms
 gem 'cocoon', '~> 1.2', '>= 1.2.10'
+
+# for user notifications
+gem 'gritter', '~> 1.2'
