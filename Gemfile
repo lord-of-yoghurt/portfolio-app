@@ -73,7 +73,7 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 # for pagination
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
 
-# for video uploader
+# for media uploader
 gem 'carrierwave', '~> 1.1'
 gem 'carrierwave-aws', '~> 1.0'
 gem 'mini_magick', '~> 4.8'
@@ -87,3 +87,6 @@ gem 'gritter', '~> 1.2'
 
 # to use the twitter API for social tool module in lib
 gem 'twitter', '~> 6.1'
+
+# to use with ActionCable live comments
+gem 'redis', '~> 4.0'
