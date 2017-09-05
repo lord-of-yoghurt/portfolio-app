@@ -20,6 +20,9 @@ Rails.application.routes.draw do
     end
   end
 
+  # create WebSocket connection for live comments
+  mount ActionCable.server => '/cable'
+
   # customizing routes
   root to: 'pages#home'
   get 'about', to: 'pages#about'
