@@ -164,7 +164,9 @@ h6, .h6 {
   text-align: center;
   background-color: #f9f9f9;
   border-top: .05rem solid #e5e5e5;
+  margin-top: 40px;
 }
+
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
@@ -175,4 +177,19 @@ h6, .h6 {
 
 .social-links li {
   font-size: 2em;
+}
+
+.comment-card > .card {
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.comment-attribution {
+  padding-top: 10px;
+  font-size: .8em;
+  font-style: italic;
+}
+
+.comment-name {
+  font-weight: 700;
 }
