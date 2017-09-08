@@ -90,3 +90,9 @@ gem 'twitter', '~> 6.1'
 
 # to use with ActionCable live comments
 gem 'redis', '~> 4.0'
+
+# for markdown integration
+gem 'redcarpet', '~> 3.4'
+
+# for syntax highlighting
+gem 'coderay', '~> 1.1', '>= 1.1.2'
