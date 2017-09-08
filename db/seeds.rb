@@ -10,7 +10,7 @@ puts "created 3 topics!"
   Blog.create!(
     title: "My Blog Post no. #{blog}",
     body: "Bacon ipsum dolor amet flank pig fatback, tenderloin hamburger pork belly sausage. Rump tail drumstick spare ribs jerky, andouille filet mignon ground round pork chop. Salami kielbasa t-bone spare ribs prosciutto. Leberkas swine porchetta sirloin, corned beef ham hock cupim burgdoggen landjaeger spare ribs drumstick. Kielbasa andouille landjaeger short loin, chuck salami prosciutto tri-tip ribeye pork loin fatback.",
-    topic_id: Topic.last.id
+    topic_id: rand(1..3)
   )
 end
 
