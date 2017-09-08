@@ -177,6 +177,8 @@ h6, .h6 {
 
 .social-links li {
   font-size: 2em;
+  display: inline;
+  padding-right: 10px;
 }
 
 .comment-card > .card {
@@ -192,4 +194,12 @@ h6, .h6 {
 
 .comment-name {
   font-weight: 700;
+}
+
+.sidebar-topic {
+  display: block;
+}
+
+.sidebar-topic > .fa {
+  font-size: .75em;
 }
