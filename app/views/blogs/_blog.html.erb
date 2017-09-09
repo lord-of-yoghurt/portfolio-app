@@ -4,11 +4,7 @@
   <p class="blog-post-meta"><%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
 
   <% if logged_in?(:site_admin) %>
-    <p class="blog-post-meta">
-      <%= link_to blog.status.capitalize, toggle_status_blog_path(blog) %> /
-      <%= link_to 'Edit', edit_blog_path(blog) %> /
-      <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
-    </p>
+    <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
   <% end %>
 
   <p><%= blog.body %></p>

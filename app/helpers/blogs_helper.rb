@@ -22,4 +22,8 @@ module BlogsHelper
     markdown_to_html = Redcarpet::Markdown.new(coderayified, options)
     markdown_to_html.render(text).html_safe
   end
+
+  def blog_status_icon(blog)
+    blog.draft? ? 'check-square-o' : 'square-o'
+  end
 end
