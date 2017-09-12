@@ -42,10 +42,10 @@ module ApplicationHelper
         url: portfolios_path,
         title: 'Portfolio'
       },
-      {
-        url: tech_news_path,
-        title: 'Tech News'
-      },
+      # {                         # get rid of this until a separate layout is developed
+      #   url: tech_news_path,
+      #   title: 'Tech News'
+      # },
     ]
   end
 
